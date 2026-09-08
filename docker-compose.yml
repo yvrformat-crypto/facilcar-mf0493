@@ -1,0 +1,15 @@
+services:
+  facilcar:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    image: facilcar-php:v1
+
+    container_name: facilcar-v1
+
+    ports:
+      - "4000:80"
+
+    env_file:
+      - .env.test
