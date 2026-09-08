@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: darkslategrey;
+    padding: 1rem 0;
+    text-align: center;
+    height: 60px;
+    color: white;
+}
+
+
+h1,
+h2 {
+    text-align: center;
+
+}
+
+form.formInsertVehiculos {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 2rem;
+
+    border: 2px solid steelblue;
+    border-radius: 10px;
+
+    div {
+        margin: 1rem 0;
+    }
+}
+
+label {
+    display: block;
+}
+
+.tipos {
+    /* display: flex;
+    justify-content: space-between; */
+
+    label {
+        display: inline;
+    }
+    margin-bottom: 1rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+
+    label {
+        display: inline;
+    }
+    input {
+        width: 100%;
+        padding: 5px;
+        text-align: right;
+
+    }
+}
+
+.botones {
+
+
+    button {
+        width: 100%;
+        padding: .5rem 1rem;
+        margin: 1rem 0;
+    }
+
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: .5rem 1rem;
+}
+
+#marca,
+#modelo {
+    width: 100%;
+    padding: .5rem 1rem;
+    text-align: right;
+}
+
+dialog {
+    padding: 2rem;
+    width: 20%;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+
+    button {
+        padding: .5rem 1rem;
+        margin: 1rem 0;
+        background-color: rgb(241, 176, 111);
+        border: none;
+
+        &:hover {
+            background-color: rgba(47, 79, 79, 1);
+            color: white;
+        }
+    }
+}
+
+table {
+    width: 80%;
+    margin: 2rem auto;
+
+    th,
+    td {
+        text-align: center;
+        /* border-bottom: 1px solid steelblue; */
+        height: 1.5rem;
+    }
+
+    tr:nth-child(even) {
+        background-color: rgb(70, 130, 180, .3);
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
